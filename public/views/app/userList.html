@@ -1,0 +1,29 @@
+<div class="col-md-10 col-md-offset-1 well">
+    <h3>Compras</h3>
+    <a href="#/user/purchase" class="btn btn-primary">Registrar Ticket</a>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Folio</th>
+                        <th>Cantidad</th>
+                        <th>Sucursal</th>
+                        <th>Puntos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="purchase in purchases">
+                        <td>{{ purchase.folio }}</td>
+                        <td>{{ purchase.ammount | currency}}</td>
+                        <td>{{ purchase.branch }}</td>
+                        <td>{{ purchase.points }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="" ng-repeat="puchase in purchases">
+                {{ purchase }}
+            </div>
+        </div>
+    </div>
+</div>

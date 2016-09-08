@@ -1,0 +1,36 @@
+<div class="col-sm-12">
+    <div class="well">
+        <h3>Login</h3>
+        <form angular-validator-submit="login()" name="loginForm" novalidate angular-validator>
+            <div class="form-group">
+                <input type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email"
+                    ng-model="data.email"
+                    invalid-message="'Email invalido'"
+                    required-message="'Email requerido'"
+                    validate-on="blur"
+                    required>
+            </div>
+            <div class="form-group">
+                <input type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Password"
+                    ng-model="data.password"
+                    required-message="'Contraseña requerida'"
+                    validate-on="blur"
+                    required>
+            </div>
+            <div class="alert alert-danger" ng-if="error" role="alert">
+                <span class="sr-only">Error:</span>Email y/o contraseña invalidos
+            </div>
+            <div class="form-group">
+                <span>Olvidaste tu <a href="#/forgotPassword">contraseña</a></span> |
+                <span>Registrarte <a href="#/signup">aquí</a></span>
+                <button type="submit" class="btn btn-primary pull-right">Iniciar Sesión</button>
+            </div>
+        </form>
+    </div>
+</div>

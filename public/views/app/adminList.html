@@ -1,0 +1,31 @@
+<div class="col-sm-12">
+    <div class="">
+        <h5>Welcome, Admin</h5>
+        <div class="row">
+            <div class="col-sm-8 well">
+                <h4>Usuarios</h4>
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Número de Cliente</th>
+                            <th>Tipo de Cliente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="user in users">
+                            <td>{{ user.name }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.user_number }}</td>
+                            <td>{{ getUserType(user.user_type) }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <aside class="col-sm-4 well">
+                <h4>Top Usuarios</h4>
+            </aside>
+        </div>
+    </div>
+</div>

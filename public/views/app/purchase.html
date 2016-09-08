@@ -1,0 +1,22 @@
+<div class="col-md-10 col-md-offset-1 well">
+    <form name="purchaseForm" ng-submit="submit()">
+        <div class="form-group">
+            <label for="folio">Folio del Ticket/Factura</label>
+            <input type="text" class="form-control" id="folio" placeholder="#" ng-model="data.folio">
+        </div>
+        <div class="form-group">
+            <label for="ammount">Cantidad</label>
+            <input type="number" min="0.00" step="0.01" max="999999999999" class="form-control" id="ammount" placeholder="$" ng-model="data.ammount">
+        </div>
+        <div class="form-group">
+            <label for="branch">Sucursal</label>
+            <input type="text" class="form-control" id="branch" placeholder="#" ng-model="data.branch">
+        </div>
+        <div class="form-group">
+            <label for="photo">Archivo foto</label>
+            <input type="file" id="photo" ng-model="data.photo">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+        <a class="btn btn-danger" href="#/user/list">Regresar</a>
+    </form>
+</div>

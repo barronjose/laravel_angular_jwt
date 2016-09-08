@@ -1,0 +1,28 @@
+{
+  "name": "medipuntos",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jose Barron <joseluis@hellonativo.mx>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1",
+    "satellizer": "^0.15.5",
+    "angular-ui-router": "^0.3.1",
+    "angular-resource": "^1.5.8",
+    "tg-angular-validator": "^1.2.8",
+    "angular-bootstrap": "^2.1.3"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7"
+  }
+}

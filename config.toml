@@ -1,0 +1,13 @@
+[runners]]
+  name = "php"
+  url = "<domain name removed>"
+  token = "<token removed>"
+  limit = 1
+  executor = "docker"
+  environment = ["MYSQL_ALLOW_EMPTY_PASSWORD=1"]
+  [runners.docker]
+    allowed_images = ["*", "*/*"]
+    allowed_services = ["*", "*/*"]
+    privileged = false
+    volumes = ["/cache", "/composer-auth.json:/root/.composer/auth.json:ro"]
+    wait_for_services_timeout = 0
